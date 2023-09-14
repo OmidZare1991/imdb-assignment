@@ -1,6 +1,5 @@
 package com.imdb.main;
 
-import com.imdb.main.config.ConfigProperties;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
 import org.springframework.batch.core.JobParametersBuilder;
@@ -22,8 +21,6 @@ public class ImdbApplication {
     private JobLauncher jobLauncher;
     @Autowired
     private Job job;
-    @Autowired
-    private ConfigProperties configProperties;
 
     public static void main(String[] args) {
         SpringApplication.run(ImdbApplication.class, args);
